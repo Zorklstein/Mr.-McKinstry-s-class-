@@ -1,0 +1,9 @@
+secret = int(input("pick a number between 1 and 10: "))
+guess = int (input("guess a number between 1 and 10: "))
+
+if guess == secret:
+    print(f"{guess} is equal to {secret}")
+elif guess < secret:
+    print(f"{guess} is less than the secret")
+elif guess > secret:
+    print(f"{guess} is greater than to secret")
