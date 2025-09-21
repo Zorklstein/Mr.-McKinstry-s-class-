@@ -13,7 +13,7 @@ while True:
     gpa = float(input(f"what is {firstName.title()}'s GPA(entered as a decimal): "))
     
     if gpa >= 3.5:
-        print(f"{firstName} {lastName} is on the Dean's List.")
+        print(f"{firstName} {lastName} is on the Dean's List and Honor Roll.")
     elif gpa >= 3.25:
         print(f"{firstName} {lastName} is on the Honor Roll.")
     else:
