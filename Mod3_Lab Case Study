@@ -1,6 +1,29 @@
 #ezekiel Mesman 
 
+class Vehicle():
+    def __init__(self):
+        self.vehicleType = input("what is the vehicle type: ")
 
+class Automobile(Vehicle):
+    def __init__(self):
+        super().__init__()
+        if self.vehicleType.lower() == 'car':
+            self.year = input("What year is the car: ")
+            self.make = input("What is the car make: ")
+            self.model = input("What is the car model: ")
+            self.doors = input("how many doors does the car have: ")
+            self.roof = input("What type of roof does the car have: ")
+        
+        print(f"\n\nVehicle Type: {self.vehicleType}\nYear: {self.year}\nMake: {self.make}\n"
+            + f"Model: {self.model}\nNumber of Doors: {self.doors}\nType of roof: {self.roof}")
+
+vehicle1 = Automobile()
+
+
+
+
+
+#code from class useful for assignment help
 
 '''
 class Student(User):
@@ -13,20 +36,6 @@ class Student(User):
 
 x = Student("clark", "Kent")
 x.printName()
-
-'''
-
-
-
-'''
-
-class Vehicle():
-    pass
-
-class Automobile(Vehicle):
-    pass
-
-
 
 
 class Duck():
@@ -41,8 +50,6 @@ class Duck():
         print("in the setter")
         self.hiddenName = inputName
         
-
-
 don = Duck("donald")
 print(don.getName())
 don.setName("daffy")
