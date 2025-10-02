@@ -1,19 +1,9 @@
-#ezekiel Mesman car class
+#ezekiel Mesman 
+
+
 
 '''
-
-class Person():
-    def __init__(self, firstName, lastName):
-        self.firstName = firstName
-        self.lastName = lastName
-
-    def printName(self):
-        print(f"{self.firstName} {self.lastName}")
-        
-x = Person("jon", "Doe")
-x.printName()
-
-class Student(Person):
+class Student(User):
     def __init__(self, firstName, lastName):
         super().__init__(firstName, lastName)
     
@@ -24,11 +14,11 @@ class Student(Person):
 x = Student("clark", "Kent")
 x.printName()
 
+'''
 
 
 
-
-
+'''
 
 class Vehicle():
     pass
@@ -37,7 +27,7 @@ class Automobile(Vehicle):
     pass
 
 
-'''
+
 
 class Duck():
     def __init__(self,inputName):
@@ -57,4 +47,4 @@ don = Duck("donald")
 print(don.getName())
 don.setName("daffy")
 
-        
+'''
