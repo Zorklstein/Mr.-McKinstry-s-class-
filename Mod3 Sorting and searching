@@ -1,0 +1,20 @@
+#Ezekiel mesman
+#binary search and sort
+
+list1 = [1, 2, 3, 4, 6, 8, 10, 7, 1, 6, 3, 8, 9]
+list2 = [0,1,0,0,1,0,2,0,2,0,2,1,2,1,2,1,0]
+
+intager = 10
+if intager not in list1:
+    print("-1")
+
+else:
+    for i in range(len(list1)):
+        if intager == list1[i]:
+            print(f"{intager} is at index {i}")
+
+for i in range(len(list2)):
+    for num in range(0, len(list2) - i - 1):
+        if list2[num] > list2[num + 1]:
+            list2[num], list2[num + 1] = list2[num + 1], list2[num]
+            print(list2)

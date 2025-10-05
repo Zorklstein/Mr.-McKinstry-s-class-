@@ -20,9 +20,6 @@ class Automobile(Vehicle):
 vehicle1 = Automobile()
 
 
-
-
-
 #code from class useful for assignment help
 
 '''
